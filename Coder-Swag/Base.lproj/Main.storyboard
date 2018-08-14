@@ -24,22 +24,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-2h-vjj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-2h-vjj">
                                 <rect key="frame" x="0.0" y="70" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="144" id="ldS-OI-fGb" customClass="CategoryCellTableViewCell" customModule="Coder_Swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="144"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="150" id="ldS-OI-fGb" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ldS-OI-fGb" id="OtG-Ux-Rou">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="zAO-If-fwV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="144"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJG-zI-xIr">
-                                                    <rect key="frame" x="109.5" y="58" width="156" height="28"/>
+                                                    <rect key="frame" x="109.5" y="61" width="156" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="156" id="HtK-lt-dW9"/>
                                                     </constraints>
@@ -50,10 +50,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="zAO-If-fwV" secondAttribute="trailing" id="0jA-9i-9Cq"/>
-                                                <constraint firstItem="zAO-If-fwV" firstAttribute="top" secondItem="OtG-Ux-Rou" secondAttribute="top" id="Eoh-9r-b0d"/>
+                                                <constraint firstItem="zAO-If-fwV" firstAttribute="top" secondItem="OtG-Ux-Rou" secondAttribute="top" constant="3" id="RPd-WV-BOa"/>
+                                                <constraint firstAttribute="bottom" secondItem="zAO-If-fwV" secondAttribute="bottom" constant="3" id="SvY-eA-uSI"/>
                                                 <constraint firstItem="RJG-zI-xIr" firstAttribute="centerY" secondItem="OtG-Ux-Rou" secondAttribute="centerY" id="fGU-IE-vNU"/>
                                                 <constraint firstItem="zAO-If-fwV" firstAttribute="leading" secondItem="OtG-Ux-Rou" secondAttribute="leading" id="jwa-c9-avh"/>
-                                                <constraint firstAttribute="bottom" secondItem="zAO-If-fwV" secondAttribute="bottom" id="uJk-Da-ra8"/>
                                                 <constraint firstItem="RJG-zI-xIr" firstAttribute="centerX" secondItem="OtG-Ux-Rou" secondAttribute="centerX" id="yyN-ee-eXj"/>
                                             </constraints>
                                         </tableViewCellContentView>
